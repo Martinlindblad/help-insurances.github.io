@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Insurances</title>
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="cart.css">
+  <link rel="stylesheet" href="index.html">
+</head>
+<style>
+    body{
+        background-image: linear-gradient( #13547a ,  #80d0c7);
+    color: white;
+    }
+</style>
+
+<body onload="retriveInsurance()">
+  <div  >
+    <div class="header-container">
+      <header>
+        <div class="hamburger-container" id="burger" value="click">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+        <nav id="links" class="nav-btn">
+
+          <a class="link" href="index.html">Home</a>
+          <a class="link" href="insurances.html">Insurances</a>
+          <a class="link" href="cart.html">Cart</a>
+
+        </nav>
+      </header>
+    </div>
+    <div class="cart-container">
+        <main>
+            
+                <h2 id="your-cart">Your Cart</h2>
+                <div class="cart-buy">
+                    <div class="showBean">
+                        <img src="img//bean.png" alt="">
+                        <h3>The Bean Deal</h3>
+                        <p class="totalPrice">Total: 299$</p>
+                    </div>
+                    <div class="showBuzz">
+                        <img src="img//buzz.jpg" alt="">
+                        <h3>The Buzz Deal</h3>
+                        <p class="totalPrice">Total: 399$</p>
+                    </div>
+                    <div class="showJack">
+                        <img src="img//jack-sparrow.jpg" alt="">
+                        <h3>The Sparrow Deal</h3>
+                        <p class="totalPrice">Total: 599$</p>
+                    </div>
+                    <div class="showJedi">
+                        <img src="img//jedi.jpg" alt="">
+                        <h3>The Jedi Deal</h3>
+                        <p class="totalPrice">Total: 699$</p>
+                    </div>
+                    <div class="showHulk">
+                        <img src="img//hulk.jpg" alt="">
+                        <h3>The Hulk Deal</h3>
+                        <p class="totalPrice">Total: 999$</p>
+                    </div>
+                    <div class="showRing">
+                        <img src="img//ring.jpg" alt="">
+                        <h3 >The Ring Deal</h3>
+                        <p class="totalPrice">Total: 1999$</p>
+                    </div>
+                    <a><button id="removeInsurance" class="cartButton">Remove</button></a>
+                    <a href="index.html"><button class="cartButton">Home</button></a> 
+                </div>
+                <div class="cart-buy-two">
+                    <h2>Summary</h2>
+                    <p>Would you Like to use a code?</p>
+                    <input type="text">
+                    <button>Checkout</button>
+                   
+                </div>
+        </main>
+        
+    </div>
+</div>
+    <div class="footer-container clearfix">
+            <footer>
+                <table>
+                    <tr>
+                        <th>Contact</th> 
+                        <th>Socailmedia</th> 
+                    </tr>
+                    <tr>
+                        <td>fake@email.com</td>
+                        <td><a href="https://www.facebook.com/"><img class="socialmedia" src="img//facebook.png" alt=""></a></td>
+                    </tr>
+                    <tr>
+                        <td>Pearl River, New York</td>
+                        <td><a href="https://www.twitter.com/"><img class="socialmedia" src="img//twitter.png" alt=""></a></td>
+                    </tr>
+                    <tr>
+                        <td>Phone: NAN </td>
+                        <td><a href="https://www.linkedin.com/"><img class="socialmedia" src="img//linkedin.png" alt=""></a></td>
+                    </tr>
+                </table>
+            </footer>
+        </div>
+  <script src="cart.js"></script>
+
+</body>
+
+</html>

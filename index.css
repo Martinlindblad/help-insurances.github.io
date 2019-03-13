@@ -1,0 +1,680 @@
+*{
+    box-sizing: border-box;
+    top: 0;
+}
+body{
+    margin: 0% auto;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 100%;
+    width: 100%;
+}
+h1, h2, h3{ color: rgb(255, 241, 194); font-family: 'Open Sans Condensed', sans-serif; font-size: 12vw; font-weight: 600;  text-align: center; text-transform: uppercase; text-shadow: 1px 1px 3px black; margin: 0% auto; padding: 12% 0% 7% 0%;}
+h4{
+    padding:3% 0%;
+    text-align: center;
+    color: rgb(255, 241, 194); font-family: 'Open Sans Condensed', sans-serif; font-size: 12vw; font-weight: 800;  text-align: center; text-transform: uppercase; text-shadow: 1px 1px 3px black; margin: 0% auto;
+}
+p{color: rgb(255, 241, 194); font-family: 'Open Sans Condensed', sans-serif; font-size: 4vw; font-weight: 800;  text-align: center; text-transform: uppercase;
+    margin: 0%; text-shadow: 1px 1px 1px black;
+}
+.buttonHover :hover {
+    opacity: 0.7;
+}
+
+.container{
+    margin: 0%;
+    background-attachment: fixed;
+    background-image: url(img//danger1.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    z-index: 1;
+    
+}
+.header-container{
+    width: 100%;
+    display: inline-block;
+    transition: all .5s ease-in-out; 
+    margin: 0%;
+    background-attachment: fixed;
+    background-image: url(img//danger1.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: fixed;
+    z-index: 1;
+}
+
+.header-container > header{
+    height: auto; 
+    align-content: center;
+    display: block;
+    position: relative;
+}
+.link{
+    text-decoration: none;
+    display: block;
+    color: rgb(255, 47, 47);
+    margin: 10%;
+    font-weight: 800;
+    width: 100%;
+    padding: 1%;
+}
+    /* ___________________Hamburger Menu!_______________ */
+    
+    .hamburger-container{
+        width: 100%;
+        display: inline-block;
+        transition: all .5s ease-in-out; 
+        padding-top: 1%;
+        position: fixed;
+        background: url(danger1.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+        background-attachment: fixed;
+        background-size: 1;
+        z-index: 1;
+    }
+    .line1, .line2, .line3 {
+        width: 35px;
+        height: 4px;
+        background-color: rgb(255, 0, 0);
+        margin: 5px 0;
+        transition: all 0.5s ease; 
+        border: 1px solid #fff;
+        border-radius: 40%;
+        text-align: right;
+        margin-left: 90%;
+    }
+    .change .line1{
+        -webkit-transform: rotate(-45deg) translate(-8px, 5px);
+        transform: rotate(-45deg) translate(-8px, 5px);
+    }
+    .change .line2 {opacity: 0;}
+    
+    .change .line3 {
+        -webkit-transform: rotate(45deg) translate(-6px, -6px);
+        transform: rotate(45deg) translate(-6px, -6px);
+    }
+    
+    
+    /* __________________________________ */
+    
+    .clearfix{
+        clear: both;
+    }
+    
+    
+    .nav-btn{
+        display: block;
+        opacity: 0;
+        margin-left: 55%;
+        padding-top: 50px;
+        font-size: 1.5rem; 
+        position: fixed; 
+        text-align: center;
+        text-shadow: 2px 2px 5px black;
+        animation: opacity 1s;
+    }
+    @keyframes opacity {
+        from { opacity: 0; }
+        to   { opacity: 1; }
+    }
+    
+    .front-page-container{
+        display: block;
+        margin: 0 auto;
+        
+    }
+    .slide-container{
+        margin: 0% auto;
+        width: 70%;
+        text-align: center;
+        background-image: linear-gradient(to right ,green, yellow, red);
+    }
+    
+    .main-container{
+        /* background-image: radial-gradient(red 5%, #93a5cf  10%, #e4efe9 65%); */
+        background-color: #e4efe9;
+        margin: 0% auto;
+        padding: 10px;
+        box-shadow: 1px 1px 3px black;
+    }
+    
+    .info{
+        margin: 0% auto;
+        text-align: center;
+        padding: 10px;
+        color: rgb(199, 188, 152)
+    }
+    .info > p {
+        margin: 0% auto;
+        padding: 10px;
+        color: rgb(199, 188, 152);
+        padding: 2px;
+        font-size: 12px;
+    }
+    
+    .info > h2 {
+        color: rgb(199, 188, 152);
+        margin: 0% auto;
+        padding: 10px;
+        text-shadow: 2px 2px 5px red;
+    }
+    
+    
+    .question{
+        background-image: linear-gradient(to right, #13547a ,  #80d0c7);
+        color: white;
+        width: 100%;
+        height: auto;
+        padding: 10px;
+    }
+    .question > p{
+        color:white;
+        padding: 2px;
+        font-size: 12px;
+    }
+    #danger-level-p{
+        font-size: 16px;
+        color:white;
+        padding: 2px;
+    }
+    
+    
+    
+    /* ______________________SLIDERS_________________ */
+    
+    .slider{
+        width: 100%;
+        -webkit-appearance: none;
+        width: 100%;
+        height: 25px;
+        background: #d3d3d3;
+        outline: none;
+        opacity: 0.6;
+        -webkit-transition: .2s;
+        transition: opacity .2s;
+    }
+    .slider:hover {
+        opacity: 1;
+    }
+    .slider::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 25px;
+        height: 25px;
+        background: rgb(0, 0, 0);
+        cursor: pointer;
+    }
+    
+    .slider::-moz-range-thumb {
+        width: 25px;
+        height: 25px;
+        background: rgb(0, 0, 0);
+        cursor: pointer;
+    }
+    
+    
+    
+    /* ____________________DEALS____________________ */
+    
+    .deals{
+        margin: 0% auto;
+        width: 100%;
+        background-image: linear-gradient(to right, #13547a ,  #80d0c7);
+        color: white;
+        text-align: center;
+    }
+    .deal > h3{
+        font-size: 20px;
+        color: #e4efe9;
+        padding: 2.06%;
+        width: 100%;
+    }
+    .deal > div > p{
+        padding-top: 2%;
+    }
+    .deal{
+        text-align: center;
+        background-color: #e4efe9;
+        margin: 0% auto;
+        
+    }
+    img{
+        width: 250px;
+        height: 250px;
+        padding-top: 5%;
+    }
+    
+    
+    .deal-one, .deal-two, .deal-three {
+        color: white;
+        text-align: center;
+        cursor: pointer;
+        width: 100%;
+        font-size: 18px;
+        margin: 0% auto;
+        display: none; 
+    }
+    .deal-one, .deal-two, .deal-three > p {
+        border: none;
+        outline: 0;
+    }
+    .price {
+        color: grey;
+        font-size: 18px;
+        padding: 2% 0%;
+        font-style: italic;
+        font-weight: normal;
+    }
+    p > button{
+        border: none;
+        outline: 0;
+        padding: 12px;
+        color: white;
+        background-color: #000;
+        text-align: center;
+        cursor: pointer;
+        width: 100%;
+        font-size: 18px;
+    }
+    
+    
+    
+    .socialmedia{
+        width: 30px;
+        height: auto;
+    }
+
+    /* ___________________FOOTER CSS______________ */
+    .footer-container{
+        background-image: linear-gradient( #13547a , #80d0c7);
+    }
+    /* _________________________INSURANCE PAGE___________________ */
+    
+    .insurance-container{
+        text-align: center;
+        box-shadow: 1px 1px 3px black;
+    }
+    .insurance-info{
+        /* background-color:  #ffecd2; */
+        background-image: linear-gradient( #13547a ,  #80d0c7);
+        color: white;
+    }
+    .deal-head{
+        font-size: 2rem;
+    }
+    .insurance-deal{
+        padding: 5% 2%;
+        margin: 3% 0%
+    }
+    .insurance-deal > img{
+        width: 250px;
+        height: 250px;
+    }
+    .content{
+        font-size: 16px;
+        color: white;
+    }
+    #all-deals{
+        display: none;
+    }
+    
+    .insurance-list-container{
+        display: none;
+        float: left;
+        width: 20%
+    }
+    p{
+        padding-top: 5%;
+    }
+    #no-pad{
+        padding-top: 0%;
+    }
+    /* _________________Cart________________ */
+    .cart-container{
+        width: 90%;
+        text-align: center;
+        margin: 0% auto;
+        background-image: linear-gradient( #13547a ,  #80d0c7);
+        color: white;
+        
+    }
+    .buy-container{
+        background-color: white;
+    }
+    #your-cart{
+        background-color: #80d0c7;
+        font-size: 1rem;
+        padding: 2% 1%;
+        margin: 20% 0%;  
+        text-align: left;
+        margin-bottom: 5%;
+    }
+    .cart-buy{
+        background-color: rgba(0, 0, 0, 0.088);
+        border: 1px solid rgba(0, 0, 0, 0.299);
+        margin: 0% 0% 10%;
+        
+    }
+    .totalPrice{
+        font-size: 1.2rem;
+        padding: 2%;
+    }
+    .cart-buy > img{
+        width: 100%;
+        height: auto;
+    }
+    .cartButton{
+        width: 30%;
+        height: auto;
+        border: none;
+        border-radius: 5%;
+        padding: 2px;
+        color: #000;
+        font-size: 1.4rem;
+        background-color: #fff;
+        margin-bottom: 1%;
+    }
+    .cart-buy-two > button{
+        height: auto;
+        border: none;
+        border-radius: 2%;
+        color: #000;
+        font-size: 1.4rem;
+        background-color: orange;
+        margin: 2% 0%;
+        color: white;
+        width: 100%;
+        padding: 2%;
+    }
+    .cart-buy-two > h2{
+        font-size: 1rem;
+        padding: 0%;
+        color: white;
+    }
+    .cart-buy > div > h3{
+        font-size: 1.5rem;
+        padding-top: 20%;
+    }
+    .cart-buy-two > div > p{
+        font-size: 1rem;
+    padding: 3% 0%;
+    color: white;
+}
+.cart-buy-two{
+    background-color: rgba(0, 0, 0, 0.088);
+    margin: 0% 0% 10%;
+    padding: 6% 0%;
+    border: 1px solid rgba(0, 0, 0, 0.299);
+}
+
+/* ________________Break points_____________ */
+
+@media screen and (min-width: 600px){
+    
+    .nav-btn{
+        margin-left: 65%;
+        padding-top: 100px;
+        font-size: 2rem; 
+    }
+}
+
+@media screen and (min-width: 768px){
+    
+    .nav-btn{
+        margin-left: 60%;
+        padding-top: 100px;
+        font-size: 3rem; 
+    }
+}
+
+
+@media screen and (min-width: 992px){
+    
+    .nav-btn{
+        margin-left: 65%;
+        padding-top: 100px;
+        font-size: 4rem; 
+    }
+    
+}
+@media screen and (min-width: 1200px){
+    
+    h1, h2, h3{ color: rgb(255, 241, 194); font-family: 'Open Sans Condensed', sans-serif; font-size: 12vw; font-weight: 600;  text-align: center; text-transform: uppercase; text-shadow: 1px 1px 3px black; margin: 0% auto; padding: 5% 0% 3% 0%;}
+    
+
+
+    .line1{
+        display: none;
+    }
+    .line2{
+        display: none;
+    }
+    .line3{
+        display: none;
+    }
+    .hamburger-container{
+        position: static;
+        padding-bottom: 1.5%;
+    }
+    .nav-btn{
+        display: flex;
+        opacity: 1;
+        flex-direction: row;
+        margin: 0%;
+        padding: 0%;
+        width: 30%;
+        margin-left: 70%;
+        
+    }
+
+
+    .link{
+        justify-content: space-between;
+        padding: 0%;
+        margin: 0%;
+        font-size: 2rem;
+    }
+        .main-container{
+            width: 50%;
+            float: left;
+        }
+        .info > h2{
+            font-size: 3rem;
+        }
+        .info > p{
+            font-size: 1.5rem;
+        }
+
+        .front-page-container{
+            padding-bottom: 10%;
+        }
+
+        .deal{
+            display: flex;
+            justify-content: space-around;
+            box-shadow: 1px 1px 3px black;
+            height: 900px;
+            flex-wrap: wrap;
+        }
+        .main-container{
+            height: 900px;
+        }
+        
+        .deal-one, .deal-two, .deal-three {
+            color: white;
+            cursor: pointer;
+            width: 30%;
+            font-size: 18px;
+            margin: 0% auto;
+        }
+        .deal-one, .deal-two, .deal-three > p {
+            border: none;
+            outline: 0;
+        }
+        .deal > div > p{
+            font-size: 1.5rem;
+        }
+        .price {
+            color: grey;
+            font-size: 18px;
+            padding: 2% 0%;
+            font-style: italic;
+            font-weight: normal;
+        }
+        p > button{
+            border: none;
+            outline: 0;
+            padding: 12px;
+            color: white;
+            background-color: #000;
+            text-align: center;
+            cursor: pointer;
+            width: 90%;
+            font-size: 18px;
+          }
+          
+        
+
+          /* _________________________INSURANCE PAGE___________________ */
+          .insurance-container{
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap:  wrap;
+            text-align: center;
+            box-shadow: 1px 1px 3px black;
+        }
+        .insurance-info{
+            /* background-color:  #ffecd2; */
+            background-image: linear-gradient( #13547a ,  #80d0c7);
+            color: white;
+        }
+        .deal-head{
+            font-size: 2rem;
+        }
+        .insurance-deal{
+            width: 30%;
+            padding-bottom: 5%;
+            height: 850px;
+            
+        }
+     
+        .insurance-deal > img{
+            width: 250px;
+            height: 250px;
+        }
+        .content{
+            height: 250px;
+            font-size: 16px;
+            color: white;
+        }
+ 
+        
+        .insurance-list-container{
+            float: left;
+            width: 20%;
+            display: block;
+            text-align: center;
+        }
+        h5{
+            padding:3% 0%;
+            text-align: center;
+            color: rgb(255, 241, 194); font-family: 'Open Sans Condensed', sans-serif; font-size: 20px; font-weight: 800;  text-align: center; text-transform: uppercase; text-shadow: 1px 1px 3px black; margin: 0% auto;
+        }
+        #all-deals{
+            display: block;
+        }
+        /* _________________Cart________________ */
+.cart-container{
+    width: 60%;
+    text-align: center;
+    margin: 0% auto;
+    background-image: linear-gradient( #13547a ,  #80d0c7);
+    color: white;
+    
+}
+.buy-container{
+    background-color: white;
+}
+#your-cart{
+    background-color: #80d0c7;
+    font-size: 1rem;
+    padding: 2% 1%;
+    margin: 18% 0%;  
+    text-align: left;
+    margin-bottom: 2%;
+}
+.cart-buy{
+    float: left;
+    background-color: rgba(0, 0, 0, 0.088);
+    border: 1px solid rgba(0, 0, 0, 0.299);
+    width: 50%;
+    height: 500px;
+}
+.cart-buy > div > h3{
+    padding: 10%;
+}
+.cart-buy > img{
+    width: 300px;
+    height: auto;
+    float: left;
+}
+.totalPrice{
+    font-size: 1.2rem;
+    padding: 2%;
+}
+.cartButton {
+    width: 25%;
+    height: auto;
+    border: none;
+    border-radius: 5%;
+    padding: 2px;
+    color: #000;
+    font-size: 1.4rem;
+    background-color: #fff;
+    box-shadow: 1px 2px 2px black;
+    margin-bottom: 1%;
+}
+.cart-buy-two > button{
+    height: auto;
+    border: none;
+    border-radius: 2%;
+    padding: 2px;
+    color: #000;
+    font-size: 1.4rem;
+    background-color: orange;
+    margin-bottom: 1%;
+    padding: 20px 100px;
+    color: white;
+    margin-top: 8%;
+}
+.cart-buy-two > h2{
+    font-size: 1rem;
+    padding: 7%;
+    color: white;
+}
+.cart-buy-two > h2{
+    font-size: 2rem;
+    padding-top: 10%;
+}
+.cart-buy-two > p{
+    font-size: 1.2rem;
+    padding: 3% 0%;
+    color: white;
+}
+.cart-buy-two{
+    background-color: rgba(0, 0, 0, 0.088);
+    margin: 0% auto;
+    float: right;
+    width: 49%;
+    height: 500px;
+    padding: 6% 0%;
+    border: 1px solid rgba(0, 0, 0, 0.299);
+}
+
+}
+
+
+
+
